@@ -1,0 +1,24 @@
+<ruleset name="synopsis-psr-2">
+    <description>Synopsis PSR-2 standard</description>
+
+    <rule ref="PSR2">
+        <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
+        <exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine" />
+        <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody" />
+        <exclude name="Generic.PHP.LowerCaseConstant.Found" />
+        <exclude name="PSR1.Classes.ClassDeclaration.MultipleClasses" />
+    </rule>
+    
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="150"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
+
+    <!-- Check that $this isn't used in static methods -->
+    <rule ref="Squiz.Scope.StaticThisUsage"/>
+
+    <!-- Same-line open braces for functions -->
+    <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie"/>    
+</ruleset>

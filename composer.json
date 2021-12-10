@@ -1,0 +1,19 @@
+{
+    "name": "synopsis/csv",
+    "authors": [
+        {
+            "name": "lbrzobohaty",
+            "email": "lbrzobohaty@synopsis.cz"
+        }
+    ],
+	"config": {
+        "discard-changes": true,
+        "secure-http": false
+	},
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "require-dev": {
+        "nette/tester": "~1.0"
+    }
+}

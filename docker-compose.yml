@@ -1,0 +1,4 @@
+unit:
+  image: synopsis/php:7.0-dev
+  volumes:
+     - .:/var/www/html
